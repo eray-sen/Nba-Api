@@ -1,0 +1,7 @@
+
+npython:S1192Ô"PDefine a constant instead of duplicating this literal "Invalid Choise!" 4 times.(Í“—Üúÿÿÿÿ
+jpython:S1192À"RDefine a constant instead of duplicating this literal "Choise a section:" 5 times.(¯…¼
+mpython:S3776ü"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÚÈ½Þ
+Upython:S5754·"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+spython:S117¾"VRename this local variable "Error" to match the regular expression ^[_a-z][a-z0-9_]*$.(¥ù¢¥üÿÿÿÿ
+lpython:S3776¼"TRefactor this function to reduce its Cognitive Complexity from 45 to the 15 allowed.(œŸ²_

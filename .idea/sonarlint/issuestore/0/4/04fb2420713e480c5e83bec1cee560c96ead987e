@@ -1,0 +1,24 @@
+
+fpython:S1192Ğ"MDefine a constant instead of duplicating this literal "        <tr>" 4 times.(ÁıõÁ
+gpython:S1192×"NDefine a constant instead of duplicating this literal "        </tr>" 4 times.(°îÖ
+|python:S1192æ
+"cDefine a constant instead of duplicating this literal r"~!@#$%^&*()_+|-=\{}[];':\",./;<>?" 3 times.(îª ÿ
+fpython:S1192¢"HDefine a constant instead of duplicating this literal "\\hline" 4 times.(µ€¾ÿÿÿÿÿ
+lpython:S3776N"TRefactor this function to reduce its Cognitive Complexity from 47 to the 15 allowed.(¥µ©³
+rpython:S3776ã"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÀËıÿÿÿÿ
+Jpython:S1172—",Remove the unused function parameter "name".(æ°÷‘úÿÿÿÿ
+Epython:S1172ª",Remove the unused function parameter "name".(ìÈ­
+rpython:S3776Û"TRefactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.(Îó»ıÿÿÿÿ
+rpython:S3776ÿ"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(ïäÇãüÿÿÿÿ
+mpython:S3776†"TRefactor this function to reduce its Cognitive Complexity from 42 to the 15 allowed.(ÃÜ¡ë
+rpython:S3776ş"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(Œ±ƒöùÿÿÿÿ
+mpython:S3776é"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(¢ÍÈ©
+rpython:S3776©"TRefactor this function to reduce its Cognitive Complexity from 40 to the 15 allowed.(Ã¾ôúÿÿÿÿ
+mpython:S3776ì"TRefactor this function to reduce its Cognitive Complexity from 52 to the 15 allowed.(øå­
+mpython:S3776¹"TRefactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.(³µ¬à
+mpython:S3776ì"TRefactor this function to reduce its Cognitive Complexity from 36 to the 15 allowed.(ñÊæÃ
+bpython:S1854¯"IRemove this assignment to local variable 'rows'; the value is never used.(–±·ö
+mpython:S3776‰"TRefactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.(´¯†Ø
+Cpython:S1481œ"%Remove the unused local variable "i".(–Çå£øÿÿÿÿ
+Epython:S1172¯",Remove the unused function parameter "rows".(§™Ş¤
+Cpython:S1481·"%Remove the unused local variable "i".(ƒÎ‡üÿÿÿÿ
