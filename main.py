@@ -10,7 +10,7 @@ class link:
         self.api_url_teams = "https://www.balldontlie.io/api/v1/teams"
         self.api_url_games = "https://www.balldontlie.io/api/v1/games"
         self.api_url_stats = "https://www.balldontlie.io/api/v1/stats"
-        #definition of links used in the program
+        #definition of links that are used in the program
 
 
 class players(link):
