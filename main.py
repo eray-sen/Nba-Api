@@ -10,14 +10,14 @@ class link:
         self.api_url_teams = "https://www.balldontlie.io/api/v1/teams"
         self.api_url_games = "https://www.balldontlie.io/api/v1/games"
         self.api_url_stats = "https://www.balldontlie.io/api/v1/stats"
-        ##definition of links used in the program
+        #definition of links used in the program
 
 
 class players(link):
 
     def get_all_players(self):
         page = 0
-        total_page = 39 ##there are about 39k players
+        total_page = 39 #there are approximately 39k players
         table = PrettyTable(['ID', 'F_name', 'L_name', 'Team', ])
 
         while page <= total_page:
@@ -27,7 +27,7 @@ class players(link):
             }
             response = requests.get(
                 self.api_url_players, params=params)
-            players_data = response.json()["data"] ## the information inside the 'data' is converted to string from json form
+            players_data = response.json()["data"] # the information inside the 'data' is converted to string from JSON form
             print(response.status_code)
 
             for data in players_data:
@@ -332,7 +332,6 @@ def main():
                 elif choise_players == "2":
                     player.get_players_by_names()
                 elif choise_players == "3":
-                    # players().get_players_by_team_name()
                     player.get_players_by_team_name()
                 elif choise_players == "4":
                     break
