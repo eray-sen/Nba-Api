@@ -17,6 +17,7 @@ class players(link):
     def get_all_players(self):
         page = 0
         total_page = 39 #there are about 39k players
+        total_page = 39 #there are approximately 39k players
         table = PrettyTable(['ID', 'F_name', 'L_name', 'Team', ])
 
         while page <= total_page:
@@ -26,7 +27,9 @@ class players(link):
             }
             response = requests.get(
                 self.api_url_players, params=params)
+
             players_data = response.json()["data"] #the information inside the 'data' is converted to string from json form
+            players_data = response.json()["data"] # the information inside the 'data' is converted to string from JSON form
             print(response.status_code)
 
             for data in players_data:
@@ -68,7 +71,6 @@ class players(link):
             }
             response = requests.get(
                 self.api_url_players, params=params)
-            print(response.status_code)
 
             players_data = response.json()["data"]
 
@@ -135,7 +137,7 @@ class teams(link):
 
 class games(link):
 
-    def get_all_games_of_a_team_for_a_spesific_season(self):
+    def get_all_games_of_a_team_for_a_specific_season(self):
 
         team = input("Team(abbreviation):").upper()
         season = input("Season:")
@@ -177,7 +179,7 @@ class games(link):
             page += 1
         print(table)
 
-    def get_all_games_between_two_teams_in_a_spesific_year(self):
+    def get_all_games_between_two_teams_in_a_specific_year(self):
 
         team1 = input("Team-1(abbreviation):").upper()
         team2 = input("Team-2(abbreviation):").upper()
@@ -202,7 +204,7 @@ class games(link):
         }
         response = requests.get(self.api_url_games + "?seasons[]=" + season + "&team_ids[]=" + str(team1_id),
                                 params=params)
-        # all games of team1 in a spesific season
+        # all games of team1 in a specific season
         print(response.status_code)
         games_data = response.json()["data"]
 
@@ -248,7 +250,7 @@ class games(link):
 
 class stats(link):
 
-    def get_the_stats_of_players_in_a_spesific_game(self):
+    def get_the_stats_of_players_in_a_specific_game(self):
         error = 1
         while error == 1:
             error = 0
@@ -357,14 +359,14 @@ def main():
 
             if choise == "3":
                 game = games()
-                print("\n 1-Get all games of a team for a spesific season \n 2-Get all games between two teams  in a "
+                print("\n 1-Get all games of a team for a specific season \n 2-Get all games between two teams  in a "
                       "specific year \n 3-Back")
                 choise_game = input("Choise a section:")
 
                 if choise_game == "1":
-                    game.get_all_games_of_a_team_for_a_spesific_season()
+                    game.get_all_games_of_a_team_for_a_specific_season()
                 elif choise_game == "2":
-                    game.get_all_games_between_two_teams_in_a_spesific_year()
+                    game.get_all_games_between_two_teams_in_a_specific_year()
                 elif choise_game == "3":
                     break
                 else:
@@ -373,11 +375,11 @@ def main():
 
             if choise == "4":
                 statistics = stats()
-                print("\n 1-Get stats of players in a spesific game")
+                print("\n 1-Get stats of players in a specific game")
                 choise_statistics = input("Choise a section:")
 
                 if choise_statistics == "1":
-                    statistics.get_the_stats_of_players_in_a_spesific_game()
+                    statistics.get_the_stats_of_players_in_a_specific_game()
 
                 else:
                     print("Invalid Choise!")
